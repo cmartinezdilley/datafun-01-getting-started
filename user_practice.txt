@@ -18,4 +18,247 @@ hello
 >>> b = 3
 >>> print( min (a, b))
 3
->>> 
+>>> Last login: Mon Jan 16 15:24:18 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) iMac:~ nistine$ ipython
+Python 3.9.13 (main, Aug 25 2022, 18:29:29) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.31.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: 45+72
+Out[1]: 117
+
+In [2]: x=7
+
+In [3]: y=3
+
+In [4]: x+y
+Out[4]: 10
+
+In [5]: x+y
+Out[5]: 10
+
+In [6]: total=x+y
+
+In [7]: total = x+y
+
+In [8]: total
+Out[8]: 10
+
+In [9]: type(x)
+Out[9]: int
+
+In [10]: type(10.5)
+Out[10]: float
+
+In [11]: total=10.8+12.2+0.2
+
+In [12]: total
+Out[12]: 23.2
+
+In [13]: 7*4
+Out[13]: 28
+
+In [14]: 2**10
+Out[14]: 1024
+
+In [15]: 9**(1/2)
+Out[15]: 3.0
+
+In [16]: 7/4
+Out[16]: 1.75
+
+In [17]: 7//4
+Out[17]: 1
+
+In [18]: 3//5
+Out[18]: 0
+
+In [19]: 14//7
+Out[19]: 2
+
+In [20]: -13/4
+Out[20]: -3.25
+
+In [21]: -13//4
+Out[21]: -4
+
+In [22]: 123/0
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-22-b2ce00d5adf0> in <module>
+----> 1 123/0
+
+ZeroDivisionError: division by zero
+
+In [23]: z+7
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-23-7d4d75d4fb80> in <module>
+----> 1 z+7
+
+NameError: name 'z' is not defined
+
+In [24]: 17%5
+Out[24]: 2
+
+In [25]: 7.5%3.5
+Out[25]: 0.5
+
+In [26]: 10*(5+3)
+Out[26]: 80
+
+In [27]: 10*5+3
+Out[27]: 53
+
+In [28]: 3*(4-5)
+Out[28]: -3
+
+In [29]: 3*4-5
+Out[29]: 7
+
+In [30]: 4**3**2
+Out[30]: 262144
+
+In [31]: (4**3)**2
+Out[31]: 4096
+
+In [32]: 4**(3**2)
+Out[32]: 262144
+
+In [33]: print('Welcome to Python!')
+Welcome to Python!
+
+In [34]: print("Welcome to Python!")
+Welcome to Python!
+
+In [35]: print('Welcome', 'to', 'Python!')
+Welcome to Python!
+
+In [36]: print('Welcome\nto\n\nPython!')
+Welcome
+to
+
+Python!
+
+In [37]: print('this is a longer string, so we\
+    ...: split it over two lines')
+this is a longer string, so wesplit it over two lines
+
+In [38]: print('Sum is', 7+3)
+Sum is 10
+
+In [39]: type('word')
+Out[39]: str
+
+In [40]: print('int(5.2)', 'truncates 5.2 to', int(5.2))
+int(5.2) truncates 5.2 to 5
+
+In [41]: print('int(5.2)', 'truncates 5.2 to', int(5.2))
+int(5.2) truncates 5.2 to 5
+
+In [42]: print('Display "hi" in quotes')
+Display "hi" in quotes
+
+In [43]: print('Display 'hi' in quotes')
+  File "<ipython-input-43-19bf596ccf72>", line 1
+    print('Display 'hi' in quotes')
+                    ^
+SyntaxError: invalid syntax
+
+
+In [44]: print('Display \'hi\' in quotes')
+Display 'hi' in quotes
+
+In [45]: print("Display \"hi\" in quotes")
+Display "hi" in quotes
+
+In [46]: print("""Display "hi" and 'bye' in quotes""")
+Display "hi" and 'bye' in quotes
+
+In [47]: triple_quoted_string = """This is a triple-quoted
+    ...: string that spans two lines"""
+
+In [48]: print(triple_quoted_string)
+This is a triple-quoted
+string that spans two lines
+
+In [49]: triple_quoted_string
+Out[49]: 'This is a triple-quoted\nstring that spans two lines'
+
+In [50]: print("""This is a lengthy multiline string containing a few lines \ of
+    ...:  text""")
+This is a lengthy multiline string containing a few lines \ of text
+
+In [51]: name=input("what's your name?")
+what's your name? Christine
+
+In [52]: name
+Out[52]: ' Christine'
+
+In [53]: print(name)
+ Christine
+
+In [54]: name= input("what's your name?")
+what's your name? Christine Martinez
+
+In [55]: name
+Out[55]: ' Christine Martinez'
+
+In [56]: print(name)
+ Christine Martinez
+
+In [57]: value1= input('Enter first number: ')
+Enter first number: 7
+
+In [58]: value2 = input('Enter second number; ')
+Enter second number; 3
+
+In [59]: value1+value2
+Out[59]: '73'
+
+In [60]: value=inout('Enter an intenger; ')
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-60-1ec7e4a9f4cf> in <module>
+----> 1 value=inout('Enter an intenger; ')
+
+NameError: name 'inout' is not defined
+
+In [61]: value = input('Enter an integer: ')
+Enter an integer: 7
+
+In [62]: value=int(value)
+
+In [63]: value
+Out[63]: 7
+
+In [64]: another_value=int(input('Enter another integer: '))
+Enter another integer: 13
+
+In [65]: another_value
+Out[65]: 13
+
+In [66]: value+another_value
+Out[66]: 20
+
+In [67]: bad_value=int(input('Enter another integer: '))
+Enter another integer: hello
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-67-fc231453d5d8> in <module>
+----> 1 bad_value=int(input('Enter another integer: '))
+
+ValueError: invalid literal for int() with base 10: 'hello'
+
+In [68]: int(10.5)
+Out[68]: 10
+
+In [69]: float('6.2')*3.3
+Out[69]: 20.46
+
+In [70]: 
+
